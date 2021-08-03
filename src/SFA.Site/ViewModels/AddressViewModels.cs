@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -11,6 +12,9 @@ namespace SFA.Site.ViewModels
     {
         [Key]
         public Guid Id { get; set; }
+
+        [HiddenInput]
+        public Guid PassengerId { get; set; }
 
         [DisplayName("Rua")]
         [Required(ErrorMessage = "O campo {0} é obrigatório.")]
