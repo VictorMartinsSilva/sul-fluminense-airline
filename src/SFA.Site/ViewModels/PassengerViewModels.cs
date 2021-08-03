@@ -35,7 +35,7 @@ namespace SFA.Site.ViewModels
 
         [DisplayName("Ativo")]
         public bool Active { get; set; }
-        public IFormFile UploadImage { get; set; }
+        //public IFormFile UploadImage { get; set; }
         public string Image { get; set; }
         public IEnumerable<AddressViewModels> Addresses { get; set; }
     }
