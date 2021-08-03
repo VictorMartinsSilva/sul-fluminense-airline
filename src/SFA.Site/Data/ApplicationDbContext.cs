@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using SFA.Site.ViewModels;
 
 namespace SFA.Site.Data
 {
@@ -12,5 +13,7 @@ namespace SFA.Site.Data
             : base(options)
         {
         }
+        public DbSet<SFA.Site.ViewModels.AddressViewModels> AddressViewModels { get; set; }
+        public DbSet<SFA.Site.ViewModels.PassengerViewModels> PassengerViewModels { get; set; }
     }
 }
