@@ -1,0 +1,291 @@
+﻿body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------Error---------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+#errorImage{
+    opacity: 0.2;
+}
+
+#errorText {
+    position: absolute;
+    left: 250px;
+    top: 135px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------NavBar--------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width:1360px) {
+    .navbar-nav-internal {
+        margin-left: 68%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .navbar-nav-internal {
+        margin-left: 50%!important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar-nav-internal {
+        margin-left: 3%!important;
+    }
+}
+
+.nav-link-internal {
+    font-family: inherit; 
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+    line-height: 20px;
+    font-size: 20px;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link-internal:hover {
+    color: #66ccff;
+    text-decoration:none;
+}
+
+.nav-link-internal.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+}
+
+.navbar-nav-internal {
+    margin-left: 68%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-brand-internal {
+    color: #fff;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar-brand-internal:hover {
+    color: #fff;
+    text-decoration:none;
+}
+
+#navbarLogin {
+    margin-left: 0% !important;
+}
+
+@media (min-width: 576px) {
+    .navbar-expand-sm {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+        .navbar-expand-sm .navbar-nav-internal {
+            flex-direction: row;
+        }
+
+            .navbar-expand-sm .navbar-nav-internal .dropdown-menu {
+                position: absolute;
+            }
+
+            .navbar-expand-sm .navbar-nav-internal .nav-link {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+            }
+
+        .navbar-expand-sm .navbar-nav-scroll {
+            overflow: visible;
+        }
+
+        .navbar-expand-sm .navbar-collapse {
+            display: flex !important;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-sm .navbar-toggler {
+            display: none;
+        }
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+        .navbar-expand-md .navbar-nav-internal {
+            flex-direction: row;
+        }
+
+            .navbar-expand-md .navbar-nav-internal .dropdown-menu {
+                position: absolute;
+            }
+
+            .navbar-expand-md .navbar-nav-internal .nav-link {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+            }
+
+        .navbar-expand-md .navbar-nav-scroll {
+            overflow: visible;
+        }
+
+        .navbar-expand-md .navbar-collapse {
+            display: flex !important;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-md .navbar-toggler {
+            display: none;
+        }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+        .navbar-expand-lg .navbar-nav-internal {
+            flex-direction: row;
+        }
+
+            .navbar-expand-lg .navbar-nav-internal .dropdown-menu {
+                position: absolute;
+            }
+
+            .navbar-expand-lg .navbar-nav-internal .nav-link {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+            }
+
+        .navbar-expand-lg .navbar-nav-scroll {
+            overflow: visible;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: flex !important;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+}
+
+@media (min-width: 1200px) {
+    .navbar-expand-xl {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+        .navbar-expand-xl .navbar-nav-internal {
+            flex-direction: row;
+        }
+
+            .navbar-expand-xl .navbar-nav-internal .dropdown-menu {
+                position: absolute;
+            }
+
+            .navbar-expand-xl .navbar-nav-internal .nav-link {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+            }
+
+        .navbar-expand-xl .navbar-nav-scroll {
+            overflow: visible;
+        }
+
+        .navbar-expand-xl .navbar-collapse {
+            display: flex !important;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-xl .navbar-toggler {
+            display: none;
+        }
+}
+
+@media (min-width: 1400px) {
+    .navbar-expand-xxl {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+        .navbar-expand-xxl .navbar-nav-internal {
+            flex-direction: row;
+        }
+
+            .navbar-expand-xxl .navbar-nav-internal .dropdown-menu {
+                position: absolute;
+            }
+
+            .navbar-expand-xxl .navbar-nav-internal .nav-link {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+            }
+
+        .navbar-expand-xxl .navbar-nav-scroll {
+            overflow: visible;
+        }
+
+        .navbar-expand-xxl .navbar-collapse {
+            display: flex !important;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-xxl .navbar-toggler {
+            display: none;
+        }
+}
+
+#toggleIcon{
+    color: #fff;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------Index--------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.mt-internal{
+    margin-top: 5%;
+}
+
+.frase span {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+}
+
+.frase p {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-right: 60px;
+    font-weight: 900;
+    color: #fff;
+}
+
+#fundoFrase {
+    margin-bottom: 5%;
+    background-image: url(img/capa.png);
+    border-radius: 10px;
+}

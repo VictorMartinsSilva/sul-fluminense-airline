@@ -1,0 +1,58 @@
+﻿<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="While Inc." />
+
+    <title>Sul Fluminense Airline - @ViewData["Title"]</title>
+
+    <link rel="stylesheet" href="~/css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/internal.css" />
+
+    <link rel="icon" type="imagem/png" href="~/css/img/logo.png" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md  fixed-top" style="background-color: #003366;">
+            <a class="navbar-brand-internal" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="/css/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                Sul Fluminense Airline
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-align-justify" id="toggleIcon"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav-internal">
+                    <li class="nav-item">
+                        <a class="nav-link-internal" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-internal" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                    <partial name="_LoginPartial" />
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">While Inc.</a> &copy; 2021
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
