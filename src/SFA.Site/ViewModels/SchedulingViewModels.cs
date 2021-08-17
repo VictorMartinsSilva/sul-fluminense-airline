@@ -11,6 +11,9 @@ namespace SFA.Site.ViewModels
 {
     public class SchedulingViewModels
     {
+        [Key]
+        public Guid Id { get; set; }
+
         [DisplayName("Bagagem de Mão")]
         [Required(ErrorMessage = "O campo {0} é obrigatório.")]
         public int HandBaggage { get; set; }

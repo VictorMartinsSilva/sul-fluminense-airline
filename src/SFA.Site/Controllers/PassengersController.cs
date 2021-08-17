@@ -22,23 +22,25 @@ namespace SFA.Site.Controllers
             _mapper = mapper;
         }
 
+        #region Index
         public async Task<IActionResult> Index()
         {
             return View(_mapper.Map<IEnumerable<PassengerViewModels>>(await _passengerRepository.GetAll()));
         }
+        #endregion
 
+        #region Details
         public async Task<IActionResult> Details(Guid id)
         {
             var passengerViewModels = await GetPassengerAddress(id);
 
-            if (passengerViewModels == null)
-            {
-                return NotFound();
-            }
+            if (passengerViewModels == null) return NotFound();
 
             return View(passengerViewModels);
         }
+        #endregion
 
+        #region Create
         public IActionResult Create()
         {
             return View();
@@ -55,15 +57,14 @@ namespace SFA.Site.Controllers
 
             return View(passengerViewModels);
         }
+        #endregion
 
+        #region Edit
         public async Task<IActionResult> Edit(Guid id)
         {
             var passengerViewModels = await GetPassengerAddressScheduling(id);
 
-            if (passengerViewModels == null)
-            {
-                return NotFound();
-            }
+            if (passengerViewModels == null) return NotFound();
 
             return View(passengerViewModels);
         }
@@ -83,14 +84,13 @@ namespace SFA.Site.Controllers
             return RedirectToAction(nameof(Index));
             
         }
+        #endregion
 
+        #region Delete
         public async Task<IActionResult> Delete(Guid id)
         {
             var passengerViewModels = await GetPassengerAddress(id);
-            if (passengerViewModels == null)
-            {
-                return NotFound();
-            }
+            if (passengerViewModels == null) return NotFound();
 
             return View(passengerViewModels);
         }
@@ -107,6 +107,7 @@ namespace SFA.Site.Controllers
             await _passengerRepository.Delete(id);
             return RedirectToAction(nameof(Index));
         }
+        #endregion
 
         private async Task<PassengerViewModels> GetPassengerAddress(Guid id)
         {
