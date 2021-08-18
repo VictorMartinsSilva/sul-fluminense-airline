@@ -36,6 +36,8 @@ namespace SFA.Site.ViewModels
         public Guid CompanyId { get; set; }
         public CompanyViewModels Company { get; set; }
 
+        public IEnumerable<CompanyViewModels> Companies { get; set; }
+
         public IEnumerable<SeatViewModels> Seats { get; set; }
 
         public IEnumerable<FlightViewModels> Flights { get; set; }

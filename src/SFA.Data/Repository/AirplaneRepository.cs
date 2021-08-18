@@ -27,5 +27,12 @@ namespace SFA.Data.Repository
                 .Include(c => c.Seats)
                 .ToListAsync();
         }
+
+        public async Task<IEnumerable<Airplane>> GetAirplaneCompanies()
+        {
+            return await _db.Airplanes.AsNoTracking()
+                .Include(c => c.Company)
+                .ToListAsync();
+        }
     }
 }
