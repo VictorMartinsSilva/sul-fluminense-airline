@@ -46,6 +46,7 @@ namespace SFA.Site
             services.AddScoped<IFlightRepository, FlightRepository>();
             services.AddScoped<IPassengerRepository, PassengerRepository>();
             services.AddScoped<ISchedulingRepository, SchedulingRepository>();
+            services.AddScoped<ISeatRepository, SeatRepository>();
             services.AddScoped<IAddressRepository, AddressRepository>();
         }
 

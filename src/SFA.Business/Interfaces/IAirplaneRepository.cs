@@ -9,5 +9,6 @@ namespace SFA.Business.Interfaces
     {
         Task<Airplane> GetAirplaneCompany(Guid companyId);
         Task<IEnumerable<Airplane>> GetAirplaneSeats();
+        Task<IEnumerable<Airplane>> GetAirplaneCompanies();
     }
 }
